@@ -88,7 +88,7 @@ where Players_name LIKE '?%'
 
 --Replace the ones that start with '?' with 'S'
 update fifa
-set Players_name = replace(Full_name, '?', 'S')
+set Players_name = replace(players_name, '?', 'S')
 where Players_name like '?%'
 
 select *
